@@ -1,0 +1,18 @@
+{
+	"files": {
+		"ignoreUnknown": false
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.scss"],
+			"linter": { "enabled": true },
+			"formatter": { "enabled": true },
+			"css": { "parser": { "cssModules": true } }
+		},
+		{
+			"includes": ["**/*.html"],
+			"linter": { "enabled": true },
+			"formatter": { "enabled": true }
+		}
+	]
+}
