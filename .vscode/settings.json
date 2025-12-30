@@ -7,10 +7,8 @@
     }
   ],
   "editor.formatOnSave": true,
-  "editor.defaultFormatter": "biomejs.biome",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
-    "source.fixAll.biome": "explicit"
-  },
-  "[vue]": {
+    "source.fixAll.eslint": "explicit"
   }
 }
