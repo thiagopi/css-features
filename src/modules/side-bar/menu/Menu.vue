@@ -1,9 +1,4 @@
 <script setup lang="ts">
-import { useRoute } from 'vue-router';
-
-const route = useRoute();
-const activeRoute = route.name;
-console.info('activeRoute', activeRoute);
 </script>
 
 <template>
@@ -11,22 +6,19 @@ console.info('activeRoute', activeRoute);
     <RouterLink
       to="/"
       class="menu-item"
-      :class="activeRoute === 'home' ? 'active' : ''"
-      @click="activeRoute = 'home'"
+      active-class="active"
       >Home</RouterLink
     >
     <RouterLink
       to="/border-animations"
       class="menu-item"
-      :class="activeRoute === 'border-animations' ? 'active' : ''"
-      @click="activeRoute = 'border-animations'"
+      active-class="active"
       >Border animations</RouterLink
     >
     <RouterLink
       to="/infinity-carousel"
       class="menu-item"
-      :class="activeRoute === 'infinity-carousel' ? 'active' : ''"
-      @click="activeRoute = 'infinity-carousel'"
+      active-class="active"
       >Infinity carousel</RouterLink
     >
   </nav>
@@ -64,32 +56,6 @@ nav {
     }
     &:hover {
       background-color: rgba(25, 140, 168, 0.5);
-    }
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    gap: 8px;
-
-    li {
-      padding: 16px 12px;
-      margin: 0;
-      width: 100%;
-      height: max-content;
-      cursor: pointer;
-      line-height: 0%;
-      border-radius: 16px;
-
-      &.active {
-        background-color: rgba(25, 140, 168, 1);
-      }
-      &:hover {
-        background-color: rgba(25, 140, 168, 0.5);
-      }
     }
   }
 }
