@@ -2,6 +2,10 @@
 	"files": {
 		"ignoreUnknown": false
 	},
+	"formatter": {
+		"indentStyle": "tab",
+		"indentWidth": 2
+	},
 	"overrides": [
 		{
 			"includes": ["**/*.scss"],
@@ -11,6 +15,11 @@
 		},
 		{
 			"includes": ["**/*.html"],
+			"linter": { "enabled": true },
+			"formatter": { "enabled": true }
+		},
+		{
+			"includes": ["**/*.vue"],
 			"linter": { "enabled": true },
 			"formatter": { "enabled": true }
 		}
