@@ -39,7 +39,7 @@
 
   &::after,
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -77,7 +77,7 @@
 
 // The --angle property is a custom property that is used to animate the border of the card.
 @property --angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }

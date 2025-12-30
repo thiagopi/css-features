@@ -13,7 +13,7 @@
 .card::before,
 .card2::after,
 .card2::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -38,7 +38,7 @@
   background-image: conic-gradient(from var(--angle), transparent 90%, #006aff);
 }
 @property --angle {
-  syntax: "<angle>";
+  syntax: '<angle>';
   initial-value: 0deg;
   inherits: false;
 }

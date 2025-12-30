@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useRoute } from "vue-router";
-import Menu from "./menu/Menu.vue";
+import { useRoute } from 'vue-router';
+import Menu from './menu/Menu.vue';
 
 const route = useRoute();
 const activeRoute = route.name;
-console.info("activeRoute", activeRoute);
+console.info('activeRoute', activeRoute);
 </script>
 
 <template>

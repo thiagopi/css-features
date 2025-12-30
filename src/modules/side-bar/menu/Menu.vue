@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { useRoute } from "vue-router";
+import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const activeRoute = route.name;
-console.info("activeRoute", activeRoute);
+console.info('activeRoute', activeRoute);
 </script>
 
 <template>

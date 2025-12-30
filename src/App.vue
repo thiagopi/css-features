@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Header from "./modules/header/Header.vue";
-import SideBar from "./modules/side-bar/SideBar.vue";
+import Header from './modules/header/Header.vue';
+import SideBar from './modules/side-bar/SideBar.vue';
 </script>
 
 <template>
@@ -23,8 +23,8 @@ import SideBar from "./modules/side-bar/SideBar.vue";
   grid-template-columns: 12rem 1fr;
   grid-template-rows: repeat(2, minmax(40px, auto));
   grid-template-areas:
-    "aside header"
-    "aside main";
+    'aside header'
+    'aside main';
 }
 
 main {
