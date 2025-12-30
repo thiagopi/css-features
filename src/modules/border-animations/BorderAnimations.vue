@@ -27,43 +27,46 @@
 </template>
 
 <style scoped lang="scss">
-    .wrapper {
+.wrapper {
     display: flex;
     gap: 24px;
+    place-items: center;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-.card, .card2 {
- position: relative;
- margin: 0 auto;
- width: 300px;
- background-color: #1c1f2b;
- text-align: center;
- border-radius: 12px;
- color: #fff;
- padding: 12px;
-
- &::after, &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-image: conic-gradient(from var(--angle),#ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+.card,
+.card2 {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    background-color: #1c1f2b;
+    text-align: center;
     border-radius: 12px;
-    z-index: -1;
-    padding: 3px;
-    box-sizing: unset;
-    animation: 3s spin linear infinite; 
- }
+    color: #fff;
+    padding: 12px;
 
- &::before {
-    filter: blur(1.5rem); 
-    opacity: 0.5;
- }
+    &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+        background-image: conic-gradient(from var(--angle), #ff4545, #00ff99, #006aff, #ff0095, #ff4545);
+            border-radius: 12px;
+            z-index: -1;
+            padding: 3px;
+            box-sizing: unset;
+            animation: 3s spin linear infinite;
+        }
+
+                &::before {
+                    filter: blur(1.5rem);
+                    opacity: 0.5;
+                }
 }
 
 .card2::after {
@@ -82,13 +85,13 @@
 }
 
 @keyframes spin {
-    
+
     from {
         --angle: 0deg;
     }
+
     to {
         --angle: 360deg;
     }
 }
-
 </style>

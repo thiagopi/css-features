@@ -32,6 +32,9 @@ import Footer from "./modules/footer/Footer.vue";
     }
 
     main {
+      display: grid;
+        place-items: center;
+        grid-area: main;
         padding: 24px;
         height: calc(100vh - 80px);
     }

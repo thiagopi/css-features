@@ -3,7 +3,7 @@
 		"ignoreUnknown": false
 	},
 	"formatter": {
-		"indentStyle": "tab",
+		"indentStyle": "space",
 		"indentWidth": 2
 	},
 	"overrides": [
