@@ -16,6 +16,12 @@
       >Border animations</RouterLink
     >
     <RouterLink
+      to="/corner-shape"
+      class="menu-item"
+      active-class="active"
+      >Corner shape</RouterLink
+    >
+    <RouterLink
       to="/infinity-carousel"
       class="menu-item"
       active-class="active"
