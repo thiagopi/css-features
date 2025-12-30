@@ -33,5 +33,6 @@ main {
   grid-area: main;
   padding: 24px;
   height: calc(100vh - 40px);
+  overflow: auto;
 }
 </style>
