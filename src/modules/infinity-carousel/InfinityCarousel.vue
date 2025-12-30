@@ -93,7 +93,7 @@
   &.vertical {
     flex-direction: column;
     width: 5rem;
-    height: 70vh;
+    height: 75vh;
   }
 }
 
