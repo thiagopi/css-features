@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <header>Something here</header>
+  <header>CSS Features</header>
 </template>
 
 <style scoped lang="scss">
