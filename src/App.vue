@@ -1,34 +1,30 @@
 <script setup lang="ts">
-import Menu from "./modules/menu/Menu.vue";
 import Header from "./modules/header/Header.vue";
-import Footer from "./modules/footer/Footer.vue";
+import SideBar from "./modules/side-bar/SideBar.vue";
 </script>
 
 <template>
-  <section>
+  <section id="main-wrapper">
     <Header />
-    <Menu />
-    <!-- <router-view />  -->
+    <SideBar />
      <main>
       <RouterView />
    </main>
-   <Footer />
   </section>
 </template>
 
 <style scoped lang="scss">
-    section {
+    #main-wrapper {
         margin: 0;
         padding: 0;
         display: grid;
         width: 100%;
         max-height: 100vh;
         grid-template-columns: 12rem 1fr;
-        grid-template-rows: repeat(3, minmax(40px, auto));
+        grid-template-rows: repeat(2, minmax(40px, auto));
         grid-template-areas:
-            "header header"
-            "menu main"
-            "footer footer";
+            "aside header"
+            "aside main"
     }
 
     main {
@@ -36,6 +32,6 @@ import Footer from "./modules/footer/Footer.vue";
         place-items: center;
         grid-area: main;
         padding: 24px;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 40px);
     }
   </style>
