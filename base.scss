@@ -46,3 +46,10 @@ h1 {
   text-align: center;
   margin-bottom: 24px;
 }
+
+.wrapper {
+  display: grid;
+  gap: 24px;
+  align-self: start;
+  width: 100%;
+}

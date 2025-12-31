@@ -2,23 +2,33 @@
 
 <template>
   <div class="wrapper">
-    <div class="card">
-      <h2>Card 1</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+    <div>
+      <h1>Border animations</h1>
+
+      <p>Border animations are a CSS property that allows you to animate the border of an element.</p>
     </div>
-    <div class="card2">
-      <h2>Card 2</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-    </div>
-    <div class="card">
-      <h2>Card 3</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+
+
+    <div class="cards-group">
+      <div class="card">
+        <h2>Card 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      </div>
+
+      <div class="card2">
+        <h2>Card 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      </div>
+      <div class="card">
+        <h2>Card 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+      </div>
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.wrapper {
+.cards-group {
   display: flex;
   gap: 24px;
   place-items: center;

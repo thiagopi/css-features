@@ -32,13 +32,6 @@
 
     $radius: 40px;
 
-    .wrapper {
-        display: grid;
-        gap: 24px;
-        align-self: start;
-        width: 100%;
-    }
-
     .types {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
