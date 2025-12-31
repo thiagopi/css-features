@@ -1,32 +1,29 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+const routes = router.options.routes;
+
+const formatName = (name: string | symbol | undefined) => {
+  if (!name) return '';
+  
+  return String(name)
+    .split('-')
+    .join(' ');
+};
 </script>
 
 <template>
   <nav>
     <RouterLink
-      to="/"
+      v-for="route in routes"
+      :key="route.name"
+      :to="route.path"
       class="menu-item"
       active-class="active"
-      >Home</RouterLink
     >
-    <RouterLink
-      to="/border-animations"
-      class="menu-item"
-      active-class="active"
-      >Border animations</RouterLink
-    >
-    <RouterLink
-      to="/corner-shape"
-      class="menu-item"
-      active-class="active"
-      >Corner shape</RouterLink
-    >
-    <RouterLink
-      to="/infinity-carousel"
-      class="menu-item"
-      active-class="active"
-      >Infinity carousel</RouterLink
-    >
+      {{ formatName(route.name) }}
+    </RouterLink>
   </nav>
 </template>
 
@@ -52,6 +49,9 @@ nav {
     line-height: 0%;
     border-radius: 16px;
     box-sizing: border-box;
+    &::first-letter {
+      text-transform: uppercase;
+    }
 
     &.active {
       background-color: rgba(25, 140, 168, 1);
