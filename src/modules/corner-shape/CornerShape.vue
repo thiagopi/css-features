@@ -7,7 +7,7 @@
 
             <p>Corner shape is a CSS property that allows you to define the shape of the corners of an element.</p>
             <p>It can be used to create rounded corners, beveled corners, notched corners, squared corners, squircle corners, and tag corners.</p>
-            <p>Check <a href="https://caniuse.com/mdn-css_properties_corner-shape">Can I use</a> for browser support.</p>
+            <p>Check <a href="https://caniuse.com/mdn-css_properties_corner-shape" target="_blank">Can I use</a> for browser support.</p>
         </div>
 
         <section class="types">
@@ -153,19 +153,6 @@
 
         to {
             border-radius: $radius;
-        }
-   }
-    
-
-   @keyframes bevel {
-        from {
-            scale: 0;
-            corner-shape: initial;
-        }
-
-        to {
-            scale: 1;
-            corner-shape: bevel;
         }
    }
 </style>
