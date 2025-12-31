@@ -17,6 +17,7 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@faker-js/faker": "^10.1.0",
     "vue": "^3.5.26",
     "vue-router": "^4.6.4"
   },
